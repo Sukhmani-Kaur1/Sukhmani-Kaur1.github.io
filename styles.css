@@ -478,7 +478,74 @@ section {
   opacity: 1;
   visibility: visible;
 }
+/* **************************TAgs are here******************************** */
 
+.jss994 {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 24px;
+  /* border: 1px solid red; */
+
+}
+.jss1012 {
+  color: grey;
+  border: 1px solid var(--container-color);
+  cursor: pointer;
+  display: flex;
+  padding: 8px 12px;
+  font-size: 14px;
+  align-items: center;
+  font-weight: 600;
+  line-height: 25px;
+  border-radius: 24px;
+  background-color: var(--container-color);
+  box-shadow: var(--box-shadow);
+  /* border: 3px solid green; */
+  /* margin: auto; */
+}
+.jss1014{
+  margin: 0;
+}
+.jss1017 {
+  margin-left: 0px;
+}
+.jss1013 {
+  margin-right: 4px;
+}
+.jss914 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.jss1018 {
+  color: rgb(112, 144, 232);
+  cursor: pointer;
+  opacity: 1;
+  padding: 0px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.jss916 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.jss1018 svg,.jss1019 svg {
+    width: 16px;
+    height: 16px;
+}
+.jss1020 {
+  color: rgb(222, 86, 91);
+  cursor: pointer;
+  opacity: 1;
+  padding: 0px;
+  border-radius: 4px;
+  background-color: transparent;
+}
 /* ========================= STATS ============================ */
 #stats {
   min-height: 10vh;
@@ -899,6 +966,12 @@ section {
   .talkt-me {
     width: auto;
   }
+  .jss1012{
+    margin: auto;
+  }
+  /* .jss994 {
+    
+  } */
   /* .contact__info{
     border: 1px solid red;
   } */
@@ -1036,18 +1109,53 @@ section {
   .talkt-me {
     width: auto;
   }
+  .jss1012{
+    margin: auto;
+  }
 }
 
 /* ===================Small screen / Laptop=========================== */
 @media screen and (min-width: 821px) and (max-width: 1024px) {
-  .img-box > .blob-circle {
-    /* top: 155px;
-    left: 145px; */
+  
+  .about-flex {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+  .info {
+    text-align: center;
+    /* border: 1px solid white; */
     margin: auto;
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .info h1 {
+    font-size: 45px;
+  }
+  .info p {
+    line-height: 28px;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .info a {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+
+  .img-box > .blob-circle {
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    /* margin-top: -60px; */
   }
   .home__social {
-    bottom: 250px;
-    left: 20px;
+    top: 410px;
+    left: 10px;
     margin: auto;
   }
   .info-div {
@@ -1066,14 +1174,25 @@ section {
     margin-bottom: 15px;
   }
   .for-img {
-    width: 45%;
+    width: 55%;
+    height: min-content;
+    /* border: 3px solid red; */
     margin: auto;
   }
+ 
   .send-Msg {
     display: none;
   }
   .talkt-me {
     width: auto;
+  }
+   .jss994 {
+    width: 560px;
+    /* border: 2px solid red; */
+  }
+  .jss1012{
+    
+    margin: auto;
   }
 }
 /* ==========================Large Screens=============================== */
