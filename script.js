@@ -29,24 +29,28 @@ document.querySelectorAll("#link-nav").forEach((n) =>
 
 /*=============== SERVICES MODAL ===============*/
 
-const modelViews = document.querySelectorAll('.services__model'),
-        modelBtns = document.querySelectorAll('.services__button'),
-        modelClose = document.querySelectorAll('.services__model-close');
+const modelViews = document.querySelectorAll(".services__model"),
+  modelBtns = document.querySelectorAll(".services__button"),
+  modelClose = document.querySelectorAll(".services__model-close");
 
-let model = function(modelClick) {
-    modelViews[modelClick].classList.add('active-model');
-}
+let model = function (modelClick) {
+  modelViews[modelClick].classList.add("active-model");
+};
 
 modelBtns.forEach((mb, i) => {
-    mb.addEventListener('click', () => {
-        model(i);
-    });
+  mb.addEventListener("click", () => {
+    model(i);
+  });
 });
 
 modelClose.forEach((mc) => {
-    mc.addEventListener('click', () => {
-        modelViews.forEach((mv) => {
-            mv.classList.remove('active-model');
-        });
+  mc.addEventListener("click", () => {
+    modelViews.forEach((mv) => {
+      mv.classList.remove("active-model");
     });
+  });
 });
+// -------------------------------
+function buttonReload() {
+  window.location.reload();
+}
