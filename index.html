@@ -9,12 +9,14 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="shortcut icon"
       href="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/dev-512.png"
       type="image/x-icon"
     />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <script
       src="https://kit.fontawesome.com/b72a7cd1bc.js"
       crossorigin="anonymous"
@@ -121,11 +123,10 @@
             and technical documentation.
           </p>
           <div class="btnDiv">
-            <a href="./images/Software Developer.pdf" download=""
+            <a href="./images/Sukhmani_Kaur_Resume_01-10-2022-09-03-06.pdf" download=""
               >Download CV</a
             >
           </div>
-          
         </div>
       </div>
     </section>
@@ -136,8 +137,8 @@
         <div class="for-img info-div">
           <div class="info-blob">
             <img
-              src="./images/f43eaf3b-fcf7-4201-97c5-605211821b60-removebg-preview.png"
-              alt=""
+              src="./images/613074b1-8742-4312-8260-5c4037006d9f-removebg-preview.png"
+              alt="Sukhmani Kaur Image"
             />
           </div>
         </div>
@@ -157,8 +158,9 @@
           <div class="p-div-info">
             <p>
               I am a Backend Developer with hands on experience in Problem
-              Solving With DSA. Love to Learn new things, meeting new people,
-              Working with Teams.
+              Solving With DSA. Skilled in building Back-End applications with
+              Java, Spring boot, MySQL. Always Looking forward to learn new
+              things and Meeting new people.
             </p>
           </div>
           <div class="btn-info">
@@ -185,7 +187,7 @@
         </div>
         <div class="box-stat">
           <div class="round-mtr">
-            <h2>40+</h2>
+            <h2>100+</h2>
           </div>
           <h3>Git</h3>
           <p>Commits</p>
@@ -206,6 +208,33 @@
         </div>
       </div>
     </div>
+    <!-- Include the library. -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="./css/calender.css" />
+
+    <!-- Prepare a container for your calendar. -->
+    <p class="subtitle-calender">Contribution Calender</p>
+    <h1 class="text-calender">My Github Stats</h1>
+    <div class="calendar">
+      <!-- Loading stuff -->
+      Loading the data just for you.
+    </div>
+
+    <script>
+      GitHubCalendar(".calendar", "Sukhmani-Kaur1");
+
+      // or enable responsive functionality:
+      GitHubCalendar(".calendar", "Sukhmani-Kaur1", { responsive: true });
+
+      // Use a proxy
+      GitHubCalendar(".calendar", "Sukhmani-Kaur1", {
+        proxy(username) {
+          return fetch(`https://your-proxy.com/github?user=${username}`);
+        },
+      }).then((r) => r.text());
+    </script>
     <section class="skills" id="skill">
       <span class="section__subtitle">Skills</span>
       <h2 class="section__title">Web Development</h2>
@@ -213,7 +242,7 @@
       <div class="skills__container">
         <!-- ---------------------frontend------------------------- -->
         <div class="skills__content">
-          <h3 class="skills__title">Frontend Developer</h3>
+          <h3 class="skills__title">Frontend</h3>
 
           <div class="skills__box">
             <div class="skills__group">
@@ -264,7 +293,7 @@
 
         <!-- ------------------------beckend----------------- -->
         <div class="skills__content">
-          <h3 class="skills__title">Beckend Developer</h3>
+          <h3 class="skills__title">Backend</h3>
 
           <div class="skills__box">
             <div class="skills__group">
@@ -320,8 +349,59 @@
             </div>
           </div>
         </div>
+        <!-- ---------------------DSA------------------------- -->
+        <div class="skills__content">
+          <h3 class="skills__title">Data Structures and Algorithms</h3>
+
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">Stack</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">Queue</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">LinkedList</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">Two Pointer</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">Sorting</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
     <section class="services" id="project">
       <span class="section__subtitle">Projects</span>
       <h2 class="section__title">Project Description</h2>
@@ -340,8 +420,9 @@
 
               <h3 class="services__model-title">Guess The Number</h3>
               <p class="services__model-description">
-                This is a Game where you will have to Guess the Number that the
-                computer have displayed.
+                A game where you will be guessing a random secret number <br />
+                which will be revealed after you make the right guess the game
+                will help you with hints.
               </p>
               <h4>Services Offered</h4>
               <ul class="services__model-list">
@@ -401,9 +482,10 @@
 
               <h3 class="services__model-title">The Pig Game</h3>
               <p class="services__model-description">
-                This a website is Game where you will roll a Dice and reserve
-                <br />
-                the score this is an amazing game Play and enjoy.
+                A game where you will be rolling a dice and storing your value
+                at the right time. <br />
+                This is a multiplayer game two players can play at the same
+                time.
               </p>
 
               <h4>Services Offered</h4>
@@ -421,7 +503,7 @@
                 <li class="services__model-list">
                   <i class="bx bx-check services__model-icon"></i>
                   <p class="services__model-info">
-                    Restart the game when one player ones
+                    Restart the game when one player wins
                   </p>
                 </li>
 
@@ -463,9 +545,10 @@
 
               <h3 class="services__model-title">Overstock Clone</h3>
               <p class="services__model-description">
-                This is an E-commerce website you can find variety of <br />
-                products here. (This is a clone website the orginal website is
-                overstock.com)
+                This is a sample application that demonstrates an E-commerce
+                website using <br />
+                HTML, CSS and Javascript. We have used local storage to store
+                the products.
               </p>
 
               <h4>Services Offered</h4>
@@ -524,8 +607,8 @@
 
               <h3 class="services__model-title">Yoox Clone</h3>
               <p class="services__model-description">
-                This is a clone website of yoox.com a E-commerce website <br />
-                where you can find variety of fation items.
+                This is a clone website of an E-commerce brand (yoox.com) <br />
+                All the functionalities are as the original website.
               </p>
 
               <h4>Services Offered</h4>
@@ -706,7 +789,10 @@
         ><i class="fa-brands fa-twitter"></i
       ></a>
     </div>
+    <footer>
+      <p>© Sukhmani Kaur, All rights reserved</p>
+    </footer>
   </body>
 </html>
-<script src="script.js"></script>
+<script src="./js/script.js"></script>
 <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>

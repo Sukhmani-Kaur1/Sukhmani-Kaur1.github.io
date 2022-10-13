@@ -220,6 +220,7 @@ section {
   /* border: 1px solid blue; */
   left: 5px;
   top: 220px;
+  row-gap: 0.5rem;
 }
 
 .home__social-link {
@@ -271,6 +272,9 @@ section {
   width: 65%;
   height: 410px;
   margin: auto;
+  margin-top: 50px;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 
 .skills__content {
@@ -487,7 +491,6 @@ section {
   margin: auto;
   margin-top: 24px;
   /* border: 1px solid red; */
-
 }
 .jss1012 {
   color: grey;
@@ -505,7 +508,7 @@ section {
   /* border: 3px solid green; */
   /* margin: auto; */
 }
-.jss1014{
+.jss1014 {
   margin: 0;
 }
 .jss1017 {
@@ -534,9 +537,10 @@ section {
   justify-content: center;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
-.jss1018 svg,.jss1019 svg {
-    width: 16px;
-    height: 16px;
+.jss1018 svg,
+.jss1019 svg {
+  width: 16px;
+  height: 16px;
 }
 .jss1020 {
   color: rgb(222, 86, 91);
@@ -549,6 +553,7 @@ section {
 /* ========================= STATS ============================ */
 #stats {
   min-height: 10vh;
+  margin-bottom: 50px;
   /* border: 2px solid #7f5cff; */
 }
 .stat-round {
@@ -824,6 +829,24 @@ section {
 .contact__form-area textarea {
   resize: none;
 }
+/* *********************Footer********************* */
+footer {
+  background-color: #7f5cff;
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+
 /*===============Mobile======== MEADIA QUERY FOR LAST ===================================*/
 @media screen and (min-width: 260px) and (max-width: 480px) {
   .hamburger {
@@ -919,13 +942,15 @@ section {
   .skills {
     /* border: 6px solid red; */
     min-height: max-content;
-    /* border: 1px solid var(--primary-color); */
   }
 
   .skills__container {
     width: 70%;
-    height: 410px;
+    height: max-content;
+    margin: auto;
+    /* border: 1px solid red; */
     margin-top: 50px;
+    /* column-gap: 20px; */
   }
 
   .box-stat {
@@ -966,14 +991,14 @@ section {
   .talkt-me {
     width: auto;
   }
-  .jss1012{
+  .jss1012 {
+    align-items: center;
     margin: auto;
   }
   /* .jss994 {
     
   } */
   /* .contact__info{
-    border: 1px solid red;
   } */
 }
 
@@ -1050,15 +1075,19 @@ section {
     position: absolute;
     right: 70px;
   }
-  .skills {
+  #skill {
     /* border: 6px solid red; */
-    min-height: max-content;
+
+    min-height: min-content;
     /* border: 1px solid var(--primary-color); */
   }
 
   .skills__container {
     width: 70%;
-    height: 410px;
+    height: max-content;
+    margin: auto;
+    margin-top: 50px;
+    /* border: 6px solid green; */
   }
   .home__social {
     flex-direction: row;
@@ -1109,14 +1138,13 @@ section {
   .talkt-me {
     width: auto;
   }
-  .jss1012{
+  .jss1012 {
     margin: auto;
   }
 }
 
 /* ===================Small screen / Laptop=========================== */
 @media screen and (min-width: 821px) and (max-width: 1024px) {
-  
   .about-flex {
     width: 80%;
     flex-direction: column;
@@ -1161,6 +1189,20 @@ section {
   .info-div {
     width: 100%;
   }
+  #skill {
+    /* border: 6px solid red; */
+
+    min-height: min-content;
+    /* border: 1px solid var(--primary-color); */
+  }
+
+  .skills__container {
+    width: 70%;
+    height: max-content;
+    margin: auto;
+    margin-top: 50px;
+    /* border: 6px solid green; */
+  }
   #infor {
     min-height: 70vh;
   }
@@ -1179,19 +1221,18 @@ section {
     /* border: 3px solid red; */
     margin: auto;
   }
- 
+
   .send-Msg {
     display: none;
   }
   .talkt-me {
     width: auto;
   }
-   .jss994 {
+  .jss994 {
     width: 560px;
     /* border: 2px solid red; */
   }
-  .jss1012{
-    
+  .jss1012 {
     margin: auto;
   }
 }
