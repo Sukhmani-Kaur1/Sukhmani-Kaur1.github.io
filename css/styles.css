@@ -272,7 +272,7 @@ section {
   width: 65%;
   height: 410px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   row-gap: 10px;
   column-gap: 10px;
 }
@@ -659,13 +659,13 @@ section {
 }
 .info-blob > img {
   width: 100%;
-  height: 400px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .p-div-info {
-  width: 80%;
+  width: 90%;
   color: var(--secondary-color);
   margin-top: 20px;
   margin-bottom: 40px;
@@ -682,6 +682,11 @@ section {
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
+}
+.btn-info a:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+
 }
 /* ******************** CONTACT ***************************** */
 .container {
@@ -700,6 +705,10 @@ section {
   text-decoration: none;
   font-weight: var(--font-medium);
   transition: 0.4s;
+}
+.button:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .grid {
   display: flex;
@@ -780,6 +789,7 @@ section {
   justify-content: center;
   column-gap: 0.25rem;
 }
+
 
 .contact__button:hover .contact__button-icon {
   transform: translateX(0.25rem);
