@@ -938,6 +938,17 @@ footer p {
     justify-content: space-between;
     margin-top: 80px;
   }
+  .tech-item>img{
+    width: 90%;
+  }
+  .tech-item>h4{
+    font-size: 10px;
+  }
+  .tech-item{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+  }
   .img-box > .blob-circle {
     width: 210px;
     height: 210px;
