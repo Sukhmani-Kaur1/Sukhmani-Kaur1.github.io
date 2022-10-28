@@ -654,13 +654,15 @@ section {
   height: 100%;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-  background-color: #7f5cff;
+  /* background-color: #7f5cff; */
   margin: auto;
 }
 .info-blob > img {
-  width: 100%;
-  height: 350px;
+  width: 90%;
+  height: 70%;
   display: flex;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
   justify-content: center;
   align-items: center;
 }
@@ -687,6 +689,41 @@ section {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 
+}
+/* ******************** Tech Stacks ***************************** */
+.tech-stack{
+  min-height: 65vh;
+}
+.tech-cont{
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 12px;
+  row-gap: 10px;
+  /* border: 1px solid red; */
+}
+.tech-item{
+  width: 140px;
+  height: 120px;
+  /* background-color: #7f5cff; */
+  box-shadow: var(--box-shadow);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  color: var(--secondary-color);
+}
+.tech-item img{
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+
+  
 }
 /* ******************** CONTACT ***************************** */
 .container {
