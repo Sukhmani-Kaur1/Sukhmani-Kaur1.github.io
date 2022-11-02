@@ -345,7 +345,7 @@ section {
 }
 
 .services__card {
-  width: 210px;
+  width: 400px;
   background-color: var(--primary-color);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -707,8 +707,8 @@ section {
   /* border: 1px solid red; */
 }
 .tech-item{
-  width: 140px;
-  height: 120px;
+  width: 170px;
+  height: 160px;
   /* background-color: #7f5cff; */
   box-shadow: var(--box-shadow);
   justify-content: center;
@@ -999,8 +999,9 @@ footer p {
   }
   .skills {
     /* border: 6px solid red; */
-    min-height: max-content;
+    min-height: 70vh;
   }
+ 
 
   .skills__container {
     width: 70%;
