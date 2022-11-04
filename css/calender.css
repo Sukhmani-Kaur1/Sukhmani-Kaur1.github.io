@@ -44,11 +44,18 @@ rect.ContributionCalendar-day[data-level="4"] {
   /* border: 1px solid #DDDDDD; */
 
   border-radius: 3px;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   min-height: 243px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
+  overflow-y: scroll;
   color: var(--secondary-color);
+}
+.calendar-cont{
+  /* border: 1px solid red; */
+  width: 70%;
+  margin: auto;
 }
 
 .calendar-graph text.wday,
@@ -224,17 +231,25 @@ text.ContributionCalendar-label {
 }
 @media screen and (min-width: 260px) and (max-width: 480px) {
   .calendar {
+    width: 100%;
+    margin: auto;
+  }
+  .calendar-cont{
+    /* border: 1px solid red; */
     width: 60%;
     margin: auto;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 820px) {
-  /* .contrib-column {
-      padding: 20px;
-    }  */
-  .calendar {
-    width: 60%;
+  
+    .calendar-cont{
+      /* border: 1px solid red; */
+      width: 60%;
+      margin: auto;
+    }
+    .calendar {
+    width: 100%;
     margin: auto;
   }
 }
