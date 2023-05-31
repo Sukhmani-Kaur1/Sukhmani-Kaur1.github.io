@@ -345,7 +345,7 @@ section {
 }
 
 .services__card {
-  width: 150px;
+  width: 180px;
   background-color: var(--primary-color);
   padding: 1.5rem;
   border-radius: 1rem;
