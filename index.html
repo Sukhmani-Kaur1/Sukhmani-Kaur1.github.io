@@ -219,34 +219,6 @@
         </div>
       </div>
     </div>
-    <!-- Include the library. -->
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link rel="stylesheet" href="./css/calender.css" />
-
-    <!-- Prepare a container for your calendar. -->
-    <div class="calendar-cont">
-      <div class="calendar">
-        <!-- Loading stuff -->
-        Loading the data just for you.
-      </div>
-    </div>
-    <script>
-      GitHubCalendar(".calendar", "Sukhmani-Kaur1");
-
-      // or enable responsive functionality:
-      GitHubCalendar(".calendar", "Sukhmani-Kaur1", { responsive: true });
-
-      // Use a proxy
-      GitHubCalendar(".calendar", "Sukhmani-Kaur1", {
-        proxy(username) {
-          return fetch(
-            `https://your-proxy.com/github?user=${Sukhmani - Kaur1}`
-          );
-        },
-      }).then((r) => r.text());
-    </script>
     <section class="skills" id="skill">
       <span class="section__subtitle">Skills</span>
       <h2 class="section__title">Software Testing</h2>
