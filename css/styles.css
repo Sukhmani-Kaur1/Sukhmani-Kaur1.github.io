@@ -45,7 +45,7 @@ header {
   color: var(--secondary-color);
 }
 #logo::after {
-  content: "K";
+  content: "ukhmani";
   color: #7f5cff;
   text-decoration: line-through;
 }
