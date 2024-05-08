@@ -44,6 +44,11 @@ header {
   font-size: 30px;
   color: var(--secondary-color);
 }
+#logo::after {
+  content: "Ƨ";
+  color: #7f5cff;
+  text-decoration: line-through;
+}
 
 .nav {
   display: flex;
