@@ -44,11 +44,6 @@ header {
   font-size: 30px;
   color: var(--secondary-color);
 }
-#logo::after {
-  content: "ukhmani";
-  color: #7f5cff;
-  text-decoration: line-through;
-}
 
 .nav {
   display: flex;
