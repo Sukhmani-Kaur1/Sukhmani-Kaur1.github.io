@@ -125,8 +125,26 @@
             software testing and quality assurance.
           </p> -->
           <div class="btnDiv">
-            <a href="https://drive.google.com/uc?export=download&id=116t5U0w0QLu9knmb2mqc3TDR7FtZySnH" target="_blank"  download>View Resume</a>
-            >
+            <a href="https://drive.google.com/file/d/116t5U0w0QLu9knmb2mqc3TDR7FtZySnH/view?usp=sharing" id="resumeLink" target="_blank" onclick="handleClick(event)">View Resume</a>
+
+<script>
+function handleClick(event) {
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+
+    // Open the file in a new tab for viewing
+    window.open(event.target.href, '_blank');
+
+    // Create a temporary anchor element to trigger the download
+    var downloadLink = document.createElement('a');
+    downloadLink.href = 'https://drive.google.com/uc?export=download&id=116t5U0w0QLu9knmb2mqc3TDR7FtZySnH';
+    downloadLink.download = ''; // Optional: Specify a filename for the downloaded file
+    downloadLink.style.display = 'none'; // Hide the anchor element
+    document.body.appendChild(downloadLink); // Append the anchor to the body
+    downloadLink.click(); // Trigger the download
+    document.body.removeChild(downloadLink); // Remove the temporary anchor from the DOM
+}
+</script>
           </div>
         </div>
       </div>
