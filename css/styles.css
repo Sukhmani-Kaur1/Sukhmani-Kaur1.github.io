@@ -957,6 +957,10 @@ footer p {
     margin-top: 60px;
     width: 100%;
   }
+  .for-img>.info-blob> img{
+    visibility: hidden;
+    display: none;
+  }
 
   .info h1 {
     font-size: 32px;
@@ -1095,6 +1099,10 @@ footer p {
     margin: auto;
     margin-top: 60px;
     width: 100%;
+  }
+  .for-img>.info-blob> img{
+    visibility: hidden;
+    display: none;
   }
 
   .info h1 {
