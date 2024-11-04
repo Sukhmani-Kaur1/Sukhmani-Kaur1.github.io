@@ -52,5 +52,17 @@ modelClose.forEach((mc) => {
 });
 // -------------------------------
 function buttonReload() {
-  window.location.reload();
+    // Get form values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Define email details
+    const recipientEmail = "sukhmani.dev006@gmail.com"; // Replace with your email
+    const subject = `New Project Inquiry from ${name}`;
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AProject Details:%0D%0A${message}`;
+
+    // Construct the mailto URL and open it
+    window.location.href = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  // window.location.reload();
 }
